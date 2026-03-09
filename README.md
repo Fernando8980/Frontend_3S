@@ -15,8 +15,5 @@
 ## Operações Aritméticas
 <img width="1912" height="916" alt="image" src="https://github.com/user-attachments/assets/8bb45073-09d2-44eb-8937-9ce6df9150ff" />
 
-## Geometria
-
-
 ## Funcionarios
 <img width="1916" height="912" alt="image" src="https://github.com/user-attachments/assets/f0cd01dd-2999-4617-9138-e792ee104aec" />
