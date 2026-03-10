@@ -57,8 +57,6 @@ def login():
     return render_template('login.html')
 
 
-
-
 @app.route('/logout', methods=['GET', 'POST'])
 def logout():
     logout_user()
@@ -83,7 +81,7 @@ def operacoes():
 
 @app.route('/somar', methods=['GET', 'POST'])
 def somar():
-    if request.method == 'POST':
+    if request.form == 'POST':
         if request.form['form-n1'] and request.form['form-n2']:
             n1 = int(request.form['form-n1'])
             n2 = int(request.form['form-n2'])
@@ -139,7 +137,7 @@ def dividir():
 def funcionarios():
     _funcionarios_sql = select(Funcionario)
     _funcionarios_resultado = db_session.execute(_funcionarios_sql).scalars().all()
-    return render_template("funcionarios.html" , lista_funcionarios=_funcionarios_resultado)
+    return render_template("funcionarios.html", lista_funcionarios=_funcionarios_resultado)
 
 
 @app.route('/cadastro', methods=['GET', 'POST'])
@@ -153,7 +151,7 @@ def cadastro_funcionario():
         cargo = request.form.get('form-cargo')
         print("oi")
         salario = request.form.get('form-salario')
-        data_convertida =datetime.strptime(data_nascimento,'%Y-%m-%d')
+        data_convertida = datetime.strptime(data_nascimento, '%Y-%m-%d')
         if not nome or not email or not senha or not data_nascimento or not cpf or not cargo or not salario:
             flash(f'Preencher todos os campos', 'danger')
             return render_template('cadastro.html')
@@ -185,6 +183,9 @@ def cadastro_funcionario():
             return render_template('cadastro.html')
     return render_template('cadastro.html')
 
+@app.route('/animais')
+def animais():
+    return render_template('animais.html')
 
 # TODO Final do código
 
