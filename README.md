@@ -24,3 +24,5 @@
 ## Animais
 <img width="1891" height="908" alt="image" src="https://github.com/user-attachments/assets/36485700-caba-4ed1-bcfc-029934edf64f" />
 
+## Gatos
+<img width="1909" height="913" alt="image" src="https://github.com/user-attachments/assets/65a48810-2bcc-45f5-ac6e-2f3c522ccddb" />
